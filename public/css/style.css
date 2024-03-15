@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: border-box;
+    font-family: Arial,sans-serif;
+}
+body{
+    position: relative;
+    display: flex;
+    max-width: 100vw;
+    height: 100vh;
+    background: url(https://images.unsplash.com/photo-1563865436914-44ee14a35e4b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80);
+    background-size: cover;
+    flex-direction: row-reverse;
+    justify-content:end;
+    align-items: center;
+}
+.contain{
+    position: relative;
+    display:flex,inline-block;
+    background:#535b5eb9;
+    padding: 20px;
+    width: 4in;
+    height: 3in;
+    backdrop-filter:blur(2px);
+    border-radius: 20px;
+    justify-content:center;
+    align-items: center;
+    right: 130px;
+    transition: linear 0.3s;
+}
+.hide{
+    transform: translate(0,-80%) scale(0.1);
+    visibility: hidden;
+}
+.sub,.pass,.uname{
+    margin:0 0 30px 0;
+    width: 65%;
+    height: 50px;
+}
+input{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    outline: none;
+    padding-inline-start:15px;
+    border-radius: 3px;
+}
+.sub{
+    width: 1.5in;
+    position: relative;
+    left: 50px;
+}
+input[type=submit]{
+    width: 100%;
+    background: rgb(218, 214, 214);
+    color: black;
+    border: 2px solid rgb(218, 214, 214);
+}
+input[type=submit]:active{
+    border: 2px solid rgb(0, 0, 0);
+}
+body #cp{
+    position: relative;
+    bottom:-1.3in;
+    right: 6in;
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.854349rem;
+    padding: 0 10px 0 10px;
+    width: 250px;
+    height: 30px;
+    color: rgb(231, 227, 227);
+    outline: none;
+    z-index: 1;
+    cursor: pointer;
+}
+#cp:hover{
+    text-decoration: underline;
+}
+.contain2 {
+    position: absolute;
+    left: 750px;
+    display:flex;
+    background:#535b5eb9;
+    width: 6in;
+    height: 5in;
+    backdrop-filter:blur(2px);
+    border-radius: 20px;
+    justify-content:center;
+    align-items: center;
+    right: 240px;
+    transition:linear 0.3s;
+}
+.hide2{
+    transform: translate(0,-80%) scale(0.1);
+    visibility: hidden; 
+}
+#close{
+    position: relative;
+    width: 0.15in;
+    height: 0.16in;
+    background: url("/close.svg");
+    background-size: cover;
+    border: none;
+    left: 3.8in;
+    bottom: 2.35in;
+    z-index: 2;
+    cursor: pointer;
+}
+.sub2{
+width: 1.5in;
+}
+form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+    height: 95%;
+}
